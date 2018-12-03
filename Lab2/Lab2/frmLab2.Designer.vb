@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frm1
+Partial Class frmLab2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,16 +27,19 @@ Partial Class frm1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.txtVista = New System.Windows.Forms.TextBox()
-        Me.txtGluta = New System.Windows.Forms.TextBox()
+        Me.txtFrista = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblSale = New System.Windows.Forms.Label()
+        Me.lblCom = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(373, 316)
+        Me.btnCalculate.Location = New System.Drawing.Point(361, 345)
         Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(74, 33)
+        Me.btnCalculate.Size = New System.Drawing.Size(97, 33)
         Me.btnCalculate.TabIndex = 0
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
@@ -63,9 +66,9 @@ Partial Class frm1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(488, 316)
+        Me.Button1.Location = New System.Drawing.Point(464, 345)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(74, 33)
+        Me.Button1.Size = New System.Drawing.Size(98, 33)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Closes"
         Me.Button1.UseVisualStyleBackColor = True
@@ -77,14 +80,16 @@ Partial Class frm1
         Me.txtVista.Name = "txtVista"
         Me.txtVista.Size = New System.Drawing.Size(201, 40)
         Me.txtVista.TabIndex = 2
+        Me.txtVista.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtGluta
+        'txtFrista
         '
-        Me.txtGluta.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.txtGluta.Location = New System.Drawing.Point(361, 165)
-        Me.txtGluta.Name = "txtGluta"
-        Me.txtGluta.Size = New System.Drawing.Size(201, 40)
-        Me.txtGluta.TabIndex = 2
+        Me.txtFrista.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txtFrista.Location = New System.Drawing.Point(361, 165)
+        Me.txtFrista.Name = "txtFrista"
+        Me.txtFrista.Size = New System.Drawing.Size(201, 40)
+        Me.txtFrista.TabIndex = 2
+        Me.txtFrista.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
@@ -106,20 +111,54 @@ Partial Class frm1
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "ยอดขาย ค่าคอมมิชชั่นรวม"
         '
-        'frm1
+        'lblSale
+        '
+        Me.lblSale.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblSale.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.lblSale.Location = New System.Drawing.Point(362, 228)
+        Me.lblSale.Name = "lblSale"
+        Me.lblSale.Size = New System.Drawing.Size(200, 40)
+        Me.lblSale.TabIndex = 3
+        Me.lblSale.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblCom
+        '
+        Me.lblCom.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblCom.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.lblCom.Location = New System.Drawing.Point(362, 288)
+        Me.lblCom.Name = "lblCom"
+        Me.lblCom.Size = New System.Drawing.Size(200, 40)
+        Me.lblCom.TabIndex = 3
+        Me.lblCom.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Cyan
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label5.Location = New System.Drawing.Point(159, 22)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(480, 40)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "โปรแกรมคำนวณยอดขายและค่าคอมมิชชั่น"
+        '
+        'frmLab2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(735, 390)
-        Me.Controls.Add(Me.txtGluta)
+        Me.Controls.Add(Me.lblCom)
+        Me.Controls.Add(Me.lblSale)
+        Me.Controls.Add(Me.txtFrista)
         Me.Controls.Add(Me.txtVista)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCalculate)
-        Me.Name = "frm1"
+        Me.Name = "frmLab2"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -130,8 +169,11 @@ Partial Class frm1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents txtVista As System.Windows.Forms.TextBox
-    Friend WithEvents txtGluta As System.Windows.Forms.TextBox
+    Friend WithEvents txtFrista As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents lblSale As System.Windows.Forms.Label
+    Friend WithEvents lblCom As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 
 End Class

@@ -72,11 +72,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm1.vb">
+    <Compile Include="frmLab2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm1.Designer.vb">
-      <DependentUpon>frm1.vb</DependentUpon>
+    <Compile Include="frmLab2.Designer.vb">
+      <DependentUpon>frmLab2.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +96,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frm1.resx">
-      <DependentUpon>frm1.vb</DependentUpon>
+    <EmbeddedResource Include="frmLab2.resx">
+      <DependentUpon>frmLab2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
