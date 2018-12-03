@@ -40,7 +40,7 @@ Partial Class frmLab2
         Me.btnCalculate.Location = New System.Drawing.Point(361, 345)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(97, 33)
-        Me.btnCalculate.TabIndex = 0
+        Me.btnCalculate.TabIndex = 3
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
@@ -69,7 +69,7 @@ Partial Class frmLab2
         Me.Button1.Location = New System.Drawing.Point(464, 345)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 33)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "Closes"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -79,7 +79,7 @@ Partial Class frmLab2
         Me.txtVista.Location = New System.Drawing.Point(361, 92)
         Me.txtVista.Name = "txtVista"
         Me.txtVista.Size = New System.Drawing.Size(201, 40)
-        Me.txtVista.TabIndex = 2
+        Me.txtVista.TabIndex = 0
         Me.txtVista.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtFrista
@@ -88,7 +88,7 @@ Partial Class frmLab2
         Me.txtFrista.Location = New System.Drawing.Point(361, 165)
         Me.txtFrista.Name = "txtFrista"
         Me.txtFrista.Size = New System.Drawing.Size(201, 40)
-        Me.txtFrista.TabIndex = 2
+        Me.txtFrista.TabIndex = 1
         Me.txtFrista.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
