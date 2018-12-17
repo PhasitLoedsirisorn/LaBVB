@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub btnUp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUp.Click
-        Num = txtNumber.Text
+        Num = Val(txtNumber.Text)
         Num = Num + 2
         txtNumber.Text = Num
 
@@ -13,7 +13,7 @@
 
 
     Private Sub btnDown_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDown.Click
-        Num = txtNumber.Text
+        Num = Val(txtNumber.Text)
         Num = Num - 2
         txtNumber.Text = Num
     End Sub

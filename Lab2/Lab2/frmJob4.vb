@@ -5,15 +5,15 @@
 
    
     Private Sub btnCalTax_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalTax.Click
-        Dim salary, YearSalary, Bonus, Allowance, tax, Allincome, sale As Long
+        Dim salary, YearSalary, Bonus, Allowance, tax, Allincome, sale As Double
         Const decR_BONUS As Double = 0.2
         Const decR_ALLOW As Double = 0.01
         Const decR_TAX As Double = 0.07
        
 
-        salary = txtSalary.Text
+        salary = Val(txtSalary.Text)
         txtSalary.Text = FormatNumber(txtSalary.Text, 2)
-        sale = txtSale.Text
+        sale = Val(txtSale.Text)
         txtSale.Text = FormatNumber(txtSale.Text, 2)
 
         YearSalary = salary * 12
