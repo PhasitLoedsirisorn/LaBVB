@@ -12,36 +12,22 @@
        
 
         salary = Val(txtSalary.Text)
-        txtSalary.Text = FormatNumber(txtSalary.Text, 2)
         sale = Val(txtSale.Text)
-        txtSale.Text = FormatNumber(txtSale.Text, 2)
 
         YearSalary = salary * 12
-
         Bonus = sale * decR_BONUS
-
         Allincome = YearSalary + Bonus
-
         Allowance = Allincome * decR_ALLOW
-
         tax = (Allincome - Allowance) * decR_TAX
 
-        lblAllIncome.Text = Allincome
-        lblAllIncome.Text = FormatNumber(lblAllIncome.Text, 2)
+        lblAllIncome.Text = FormatNumber(Allincome, 2)
+        lblAllowance.Text = FormatNumber(Allowance, 2)
+        lblBonus.Text = FormatNumber(Bonus, 2)
+        lblTax.Text = FormatNumber(tax, 2)
+        lblYearSalary.Text = FormatNumber(YearSalary, 2)
 
-        lblAllowance.Text = Allowance
-        lblAllowance.Text = FormatNumber(lblAllowance.Text, 2)
-
-        lblBonus.Text = Bonus
-        lblBonus.Text = FormatNumber(lblBonus.Text, 2)
-
-        lblTax.Text = tax
-        lblTax.Text = FormatNumber(lblTax.Text, 2)
-
-        lblYearSalary.Text = YearSalary
-        lblYearSalary.Text = FormatNumber(lblYearSalary.Text, 2)
-
-
+        txtSale.Text = FormatNumber(txtSale.Text, 2)
+        txtSalary.Text = FormatNumber(txtSalary.Text, 2)
     End Sub
 
     Private Sub radShortDate_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radShortDate.CheckedChanged
