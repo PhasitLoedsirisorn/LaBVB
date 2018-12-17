@@ -8,3 +8,4 @@ D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.exe
 D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.xml
 D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.pdb
 D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frnlab1.resources
+D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab3.resources
