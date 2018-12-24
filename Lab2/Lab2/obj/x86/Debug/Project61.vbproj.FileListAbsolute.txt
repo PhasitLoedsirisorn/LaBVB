@@ -11,3 +11,17 @@ D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frnlab1.resources
 D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab3.resources
 D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmJob4.resources
 D:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab5.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.exe
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.xml
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.pdb
+C:\LaBVB\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\LaBVB\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\LaBVB\Lab2\Lab2\bin\Debug\Lab2.xml
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab4.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab2.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab3.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab5.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab1.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.Resources.resources
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Project61.vbproj.GenerateResource.Cache
+C:\LaBVB\Lab2\Lab2\obj\x86\Debug\Lab2.frmLab6.resources

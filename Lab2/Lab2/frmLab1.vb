@@ -1,4 +1,4 @@
-﻿Public Class frnlab1
+﻿Public Class frmLab1
 
     Private Sub btnCalculate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalculate.Click
         Dim Name As String

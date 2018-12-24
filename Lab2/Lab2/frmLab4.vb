@@ -1,15 +1,15 @@
-﻿Public Class frmJob4
+﻿Public Class frmLab4
 
- 
+
     Dim datetoday As Date = Date.Now
 
-   
+
     Private Sub btnCalTax_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalTax.Click
         Dim salary, YearSalary, Bonus, Allowance, tax, Allincome, sale As Double
         Const decR_BONUS As Double = 0.2
         Const decR_ALLOW As Double = 0.01
         Const decR_TAX As Double = 0.07
-       
+
 
         salary = Val(txtSalary.Text)
         sale = Val(txtSale.Text)

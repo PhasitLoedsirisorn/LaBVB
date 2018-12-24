@@ -1,20 +1,11 @@
 ﻿Public Class frmLab5
-    Dim price, ea, total, discount, paid As Integer
-    Private Sub frmLab5_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub lbltotal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbltotal.Click
-   
-
-    End Sub
-
+    Dim price, ea, paid As Integer
     Private Sub txtunit_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtunit.TextChanged
         price = Val(txtprice.Text)
         ea = Val(txtunit.Text)
-        total = price * ea
+        decTotal = price * ea
 
-        lbltotal.Text = total
+        lbltotal.Text = decTotal
 
     End Sub
 
@@ -33,27 +24,75 @@
         gpbpaid.Enabled = False
 
 
+        lblDiscount.Text = ""
+        lblcredit.Text = ""
+        lblPaid.Text = ""
 
     End Sub
 
     Private Sub btncalculate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btncalculate.Click
-        If (total < 1000) Then
-            discount = total * 0 / 100
-        ElseIf (total < 5000) Then
-            discount = total * 5 / 100
-            lblDiscount.Text = discount
-        ElseIf (total < 10000) Then
-            discount = total * 10 / 100
-        ElseIf (total >= 10000) Then
-            discount = total * 15 / 100
+        If (decTotal < 1000) Then
+            decDiscount = 0
+        ElseIf (decTotal < 5000) Then
+            decDiscount = decTotal * 5 / 100
+        ElseIf (decTotal < 10000) Then
+            decDiscount = decTotal * 10 / 100
+        ElseIf (decTotal >= 10000) Then
+            decDiscount = decTotal * 15 / 100
         End If
 
-        lblDiscount.Text = discount
-        paid = total - discount
-
-        lblPaid.Text = paid
 
 
+
+
+        If (price = 0) Then
+            MessageBox.Show("ป้อนข้อความไม่สมบูรณ์")
+        ElseIf (ea = 0) Then
+            MessageBox.Show("ป้อนข้อความไม่สมบูรณ์")
+     
+        End If
+
+
+        If radmember.Checked = True Then
+            If (radcredit.Checked = True) Then
+                decDiscount = 0
+                lblDiscount.Text = 0
+                decNet = decTotal - decDiscount
+                lblcredit.Text = decNet
+
+            End If
+
+            If radpaid.Checked = True Then
+                lblDiscount.Text = decDiscount
+                decNet = decTotal - decDiscount
+                lblcredit.Text = 0
+            End If
+
+        End If
+        If radother.Checked = True Then
+            decDiscount = 0
+            lblDiscount.Text = 0
+            decNet = decTotal - decDiscount
+            lblcredit.Text = 0
+        End If
+        lblPaid.Text = decNet
+    End Sub
+
+    Private Sub radpaid_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radpaid.CheckedChanged
+
+        lblDiscount.Text = ""
+        lblcredit.Text = ""
+        lblPaid.Text = ""
+    End Sub
+
+    Private Sub radcredit_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radcredit.CheckedChanged
+
+        lblDiscount.Text = ""
+        lblcredit.Text = ""
+        lblPaid.Text = ""
+    End Sub
+
+    Private Sub lblDiscount_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblDiscount.Click
 
     End Sub
 End Class
